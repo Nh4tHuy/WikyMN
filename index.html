@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi" class="scroll-smooth">
 <head>
@@ -223,7 +222,6 @@
       transform: scale(0.95);
     }
 
-    /* Optimized Hardware Accelerated Animations */
     @keyframes radar-sweep {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -275,7 +273,7 @@
           <div class="flex items-center space-x-2 flex-wrap">
             <h1 class="text-base sm:text-lg font-black text-slate-900 tracking-tight leading-tight">WikyAI</h1>
             <span class="px-2.5 py-0.5 text-[11px] font-extrabold bg-mint-100 text-mint-800 rounded-full border border-mint-300 shadow-sm">
-              v1.7 Plus
+              v1.9 Multi-Model
             </span>
           </div>
           <p class="text-xs text-slate-500 font-medium mt-0.5 hidden sm:block">Web app thẩm định chuyên sâu giáo án Mầm Non</p>
@@ -1043,6 +1041,7 @@
       </div>
 
     </div>
+
     <!-- WIDGET HƯỚNG DẪN SỬ DỤNG RIÊNG BIỆT -->
     <div class="glass-panel p-5 sm:p-6 rounded-3xl shadow-glass-sm border border-emerald-200/70 transition-all duration-300">
       <div class="flex items-center justify-between pb-3.5 border-b border-mint-200/80">
@@ -1052,7 +1051,7 @@
           </div>
           <div>
             <h3 class="text-sm sm:text-base font-black text-slate-900">Hướng Dẫn Sử Dụng</h3>
-            <p class="text-xs text-slate-500 font-medium">Quy trình 6 bước đơn giản để thẩm định bài giảng</p>
+            <p class="text-xs text-slate-500 font-medium">Quy trình 8 bước đơn giản để thẩm định bài giảng</p>
           </div>
         </div>
         <button id="toggleGuideBtn" class="px-3 py-1.5 bg-mint-50 hover:bg-mint-100 text-emerald-800 rounded-xl text-xs font-extrabold border border-mint-200 transition flex items-center space-x-1">
@@ -1062,7 +1061,6 @@
       </div>
 
       <div id="guideContentContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 mt-4 transition-all duration-300">
-        <!-- Bước 1 -->
           <div class="p-3.5 bg-mint-50/50 hover:bg-mint-50 border border-mint-200 rounded-2xl transition flex flex-col justify-between">
             <div>
               <div class="flex items-center space-x-2 mb-1.5">
@@ -1070,12 +1068,11 @@
                 <span class="font-extrabold text-slate-800 text-xs">Cấu hình API Key</span>
               </div>
               <p class="text-xs text-slate-600 font-medium leading-relaxed">
-                Bấm vào nút <strong>"Cấu Hình API"</strong> ở góc trên bên phải và nhập Gemini API Key miễn phí từ Google AI Studio.
+                Bấm vào nút <strong>"Cấu Hình API"</strong> ở góc trên bên phải và nhập Gemini API Key cá nhân từ Google AI Studio.
               </p>
             </div>
           </div>
 
-          <!-- Bước 2 -->
           <div class="p-3.5 bg-mint-50/50 hover:bg-mint-50 border border-mint-200 rounded-2xl transition flex flex-col justify-between">
             <div>
               <div class="flex items-center space-x-2 mb-1.5">
@@ -1088,7 +1085,6 @@
             </div>
           </div>
 
-          <!-- Bước 3 -->
           <div class="p-3.5 bg-mint-50/50 hover:bg-mint-50 border border-mint-200 rounded-2xl transition flex flex-col justify-between">
             <div>
               <div class="flex items-center space-x-2 mb-1.5">
@@ -1101,7 +1097,6 @@
             </div>
           </div>
           
-          <!-- Bước 4 -->
           <div class="p-3.5 bg-mint-50/50 hover:bg-mint-50 border border-mint-200 rounded-2xl transition flex flex-col justify-between">
             <div>
               <div class="flex items-center space-x-2 mb-1.5">
@@ -1109,11 +1104,11 @@
                 <span class="font-extrabold text-slate-800 text-xs">Thẩm Định Chuyên Sâu</span>
               </div>
               <p class="text-xs text-slate-600 font-medium leading-relaxed">
-                Nhấn vào nút <strong>"Tiến Hành Thẩm Định"</strong>. Và chờ khoảng 1~2 phút để hệ thống phân tích.
+                Nhấn vào nút <strong>"Tiến Hành Thẩm Định"</strong>. Hệ thống AI phân tích toàn bộ chỉ trong 1-2 phút.
               </p>
             </div>
           </div>
-<!-- Bước 5 -->
+
           <div class="p-3.5 bg-mint-50/50 hover:bg-mint-50 border border-mint-200 rounded-2xl transition flex flex-col justify-between">
             <div>
               <div class="flex items-center space-x-2 mb-1.5">
@@ -1121,11 +1116,11 @@
                 <span class="font-extrabold text-slate-800 text-xs">Xem AI Báo Cáo</span>
               </div>
               <p class="text-xs text-slate-600 font-medium leading-relaxed">
-                Nhấn vào tab <strong>"Báo Cáo Nghiệp Vụ"</strong>. Để xem AI phân tích, nhận xét theo từng mục nội dung.
+                Nhấn vào tab <strong>"Báo Cáo Nghiệp Vụ"</strong> để xem AI phân tích, nhận xét theo từng mục nội dung.
               </p>
             </div>
           </div>
-          <!-- Bước 6 -->
+
           <div class="p-3.5 bg-mint-50/50 hover:bg-mint-50 border border-mint-200 rounded-2xl transition flex flex-col justify-between">
             <div>
               <div class="flex items-center space-x-2 mb-1.5">
@@ -1133,11 +1128,11 @@
                 <span class="font-extrabold text-slate-800 text-xs">Xem Lỗi Giáo Án</span>
               </div>
               <p class="text-xs text-slate-600 font-medium leading-relaxed">
-                Nhấn vào tab <strong>"Kiểm tra lỗi"</strong>. Để xem các từ khóa bị lỗi được đánh dấu trong Giáo Án.
+                Nhấn vào tab <strong>"Kiểm tra lỗi"</strong> để xem các từ khóa bị lỗi được đánh dấu trong Giáo Án.
               </p>
             </div>
           </div>
-          <!-- Bước 4 -->
+
           <div class="p-3.5 bg-mint-50/50 hover:bg-mint-50 border border-mint-200 rounded-2xl transition flex flex-col justify-between">
             <div>
               <div class="flex items-center space-x-2 mb-1.5">
@@ -1145,10 +1140,11 @@
                 <span class="font-extrabold text-slate-800 text-xs">Đối Chiếu & Ghi Nhận</span>
               </div>
               <p class="text-xs text-slate-600 font-medium leading-relaxed">
-                Nhấn vào nút <strong>"Copy lỗi"</strong> rồi vào Word nhấn <strong>CTRL H</strong> tìm và đánh dấu lỗi.
+                Nhấn vào nút <strong>"Copy lỗi"</strong> rồi vào file Word nhấn <strong>CTRL + H</strong> tìm và thay thế.
               </p>
-            </div></div>
-          <!-- Bước 3 -->
+            </div>
+          </div>
+
           <div class="p-3.5 bg-mint-50/50 hover:bg-mint-50 border border-mint-200 rounded-2xl transition flex flex-col justify-between">
             <div>
               <div class="flex items-center space-x-2 mb-1.5">
@@ -1156,14 +1152,14 @@
                 <span class="font-extrabold text-slate-800 text-xs">Xem Tổng Quan</span>
               </div>
               <p class="text-xs text-slate-600 font-medium leading-relaxed">
-                Nhấn vào tab <strong>"Dashboard Quản Trị"</strong>. Để xem tổng quan các nội dung đã thẩm định.
+                Nhấn vào tab <strong>"Dashboard Quản Trị"</strong> để xem tổng quan báo cáo các nội dung đã thẩm định.
               </p>
             </div>
           </div>
-          </div>
+      </div>
     </div>
 
-    <!-- WIDGET TIỆN ÍCH (ĐẶT BÊN DƯỚI WIDGET HƯỚNG DẪN SỬ DỤNG) -->
+    <!-- WIDGET TIỆN ÍCH -->
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
       
       <!-- Widget 1: Tín hiệu kết nối AI API -->
@@ -1200,192 +1196,97 @@
         </div>
       </div>
 
-      <!-- Widget 3: Hạn mức API miễn phí (Free Quota Status) -->
+      <!-- Widget 3: Hạn mức API -->
       <div class="glass-card p-4 rounded-2xl shadow-glass-sm flex items-center justify-between interactive-hover">
         <div class="flex items-center space-x-3">
           <div class="w-10 h-10 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center font-bold flex-shrink-0 shadow-sm">
             <i data-lucide="gauge" class="w-5 h-5"></i>
           </div>
           <div>
-            <span class="text-[11px] font-extrabold text-slate-400 uppercase tracking-wider block">Hạn Mức Hợp Lệ</span>
-            <strong id="widgetQuotaStatus" class="text-xs sm:text-sm font-bold text-emerald-700 block mt-0.5">Google Free</strong>
+            <span class="text-[11px] font-extrabold text-slate-400 uppercase tracking-wider block">Hạn Mức API</span>
+            <strong id="widgetQuotaStatus" class="text-xs sm:text-sm font-bold text-emerald-700 block mt-0.5">Google AI Studio</strong>
           </div>
         </div>
         <div class="text-right">
-          <span class="text-[11px] font-extrabold text-slate-600 block">15 RPM / 1M TPM</span>
-          <span class="text-[10px] text-emerald-600 font-bold">KKey API</span>
+          <span class="text-[11px] font-extrabold text-slate-600 block">Gemini Plus / Free</span>
+          <span class="text-[10px] text-emerald-600 font-bold">Auto-Fallback</span>
         </div>
       </div>
 
     </div>
 
   </main>
-<!-- ================= POPUP CHÀO MỪNG ================= -->
-<div id="welcomeModal"
-     class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-all duration-300">
 
-  <div class="bg-white rounded-3xl border border-mint-300 shadow-2xl max-w-xl w-full overflow-hidden animate-in fade-in zoom-in-95">
-
-    <!-- Header -->
-    <div class="px-6 py-5 bg-gradient-to-r from-mint-50 via-emerald-50 to-teal-50 border-b border-mint-200">
-
-      <div class="flex items-center space-x-3">
-
-        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500
-                    text-white flex items-center justify-center shadow-lg shadow-emerald-600/25">
-          <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+  <!-- POPUP CHÀO MỪNG -->
+  <div id="welcomeModal" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-all duration-300">
+    <div class="bg-white rounded-3xl border border-mint-300 shadow-2xl max-w-xl w-full overflow-hidden animate-in fade-in zoom-in-95">
+      <div class="px-6 py-5 bg-gradient-to-r from-mint-50 via-emerald-50 to-teal-50 border-b border-mint-200">
+        <div class="flex items-center space-x-3">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 text-white flex items-center justify-center shadow-lg shadow-emerald-600/25">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-black text-slate-900">WikyAI v1.9 Plus Multi-Model</h3>
+            <p class="text-xs text-slate-500 font-medium mt-0.5">Web app thẩm định chuyên sâu giáo án Mầm Non</p>
+          </div>
         </div>
-
-        <div>
-          <h3 class="text-lg font-black text-slate-900">
-            WikyAI
-          </h3>
-
-          <p class="text-xs text-slate-500 font-medium mt-0.5">
-            Web app thẩm định chuyên sâu giáo án Mầm Non
-          </p>
-        </div>
-
       </div>
 
-    </div>
-
-    <!-- Nội dung -->
-    <div class="p-6 space-y-5">
-
-      <!-- Các bước -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-
-        <!-- Bước 1 -->
-        <div class="p-3.5 bg-mint-50/70 border border-mint-200 rounded-2xl">
-          <div class="flex items-center space-x-2 mb-1.5">
-            <span class="w-7 h-7 rounded-xl bg-emerald-600 text-white
-                         flex items-center justify-center text-xs font-black">
-              1
-            </span>
-
-            <span class="font-extrabold text-slate-800 text-xs">
-              Cấu hình API
-            </span>
+      <div class="p-6 space-y-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="p-3.5 bg-mint-50/70 border border-mint-200 rounded-2xl">
+            <div class="flex items-center space-x-2 mb-1.5">
+              <span class="w-7 h-7 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xs font-black">1</span>
+              <span class="font-extrabold text-slate-800 text-xs">Cấu hình API</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">Nhập Gemini API Key từ Google AI Studio để phân tích giáo án.</p>
           </div>
 
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Nhập Gemini API Key và chọn mô hình AI sử dụng để phân tích giáo án.
-          </p>
-        </div>
-
-        <!-- Bước 2 -->
-        <div class="p-3.5 bg-mint-50/70 border border-mint-200 rounded-2xl">
-          <div class="flex items-center space-x-2 mb-1.5">
-            <span class="w-7 h-7 rounded-xl bg-emerald-600 text-white
-                         flex items-center justify-center text-xs font-black">
-              2
-            </span>
-
-            <span class="font-extrabold text-slate-800 text-xs">
-              Tải giáo án
-            </span>
+          <div class="p-3.5 bg-mint-50/70 border border-mint-200 rounded-2xl">
+            <div class="flex items-center space-x-2 mb-1.5">
+              <span class="w-7 h-7 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xs font-black">2</span>
+              <span class="font-extrabold text-slate-800 text-xs">Tải giáo án</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">Tải lên giáo án chính cần thẩm định và các giáo án đối chiếu nếu có.</p>
           </div>
 
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Tải lên giáo án chính cần thẩm định và các giáo án đối chiếu nếu cần.
-          </p>
-        </div>
-
-        <!-- Bước 3 -->
-        <div class="p-3.5 bg-mint-50/70 border border-mint-200 rounded-2xl">
-          <div class="flex items-center space-x-2 mb-1.5">
-            <span class="w-7 h-7 rounded-xl bg-teal-600 text-white
-                         flex items-center justify-center text-xs font-black">
-              3
-            </span>
-
-            <span class="font-extrabold text-slate-800 text-xs">
-              Chọn độ tuổi
-            </span>
+          <div class="p-3.5 bg-mint-50/70 border border-mint-200 rounded-2xl">
+            <div class="flex items-center space-x-2 mb-1.5">
+              <span class="w-7 h-7 rounded-xl bg-teal-600 text-white flex items-center justify-center text-xs font-black">3</span>
+              <span class="font-extrabold text-slate-800 text-xs">Chọn độ tuổi</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">Chọn đúng nhóm tuổi của trẻ để hệ thống đối chiếu tiêu chí chuẩn.</p>
           </div>
 
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Chọn đúng nhóm tuổi của trẻ để hệ thống đối chiếu tiêu chí phù hợp.
-          </p>
-        </div>
-
-        <!-- Bước 4 -->
-        <div class="p-3.5 bg-mint-50/70 border border-mint-200 rounded-2xl">
-          <div class="flex items-center space-x-2 mb-1.5">
-            <span class="w-7 h-7 rounded-xl bg-teal-600 text-white
-                         flex items-center justify-center text-xs font-black">
-              4
-            </span>
-
-            <span class="font-extrabold text-slate-800 text-xs">
-              Tiến hành thẩm định
-            </span>
+          <div class="p-3.5 bg-mint-50/70 border border-mint-200 rounded-2xl">
+            <div class="flex items-center space-x-2 mb-1.5">
+              <span class="w-7 h-7 rounded-xl bg-teal-600 text-white flex items-center justify-center text-xs font-black">4</span>
+              <span class="font-extrabold text-slate-800 text-xs">Thẩm định ngay</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">Nhấn <strong>Tiến Hành Thẩm Định</strong> và nhận kết quả tự động.</p>
           </div>
-
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Nhấn <strong>Tiến Hành Thẩm Định</strong> và chờ AI phân tích toàn bộ giáo án.
-          </p>
         </div>
 
+        <div class="p-3.5 bg-amber-50 border border-amber-200 rounded-2xl flex items-start space-x-2.5">
+          <i data-lucide="info" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
+          <p class="text-xs text-amber-900 leading-relaxed">Phiên bản v1.9 bổ sung cơ chế Auto-Fallback tự động chuyển model khi cạn Quota hoặc nghẽn mạng.</p>
+        </div>
       </div>
 
-      <!-- Ghi chú -->
-      <div class="p-3.5 bg-amber-50 border border-amber-200 rounded-2xl flex items-start space-x-2.5">
+      <div class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-2.5">
+        <button id="welcomeVideoBtn" class="px-4 py-2.5 rounded-xl border border-mint-300 bg-mint-50 hover:bg-mint-100 text-emerald-800 font-extrabold text-xs flex items-center justify-center space-x-1.5 transition active:scale-95">
+          <i data-lucide="play-circle" class="w-4 h-4"></i>
+          <span>Xem video hướng dẫn</span>
+        </button>
 
-        <i data-lucide="info"
-           class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
-
-        <p class="text-xs text-amber-900 leading-relaxed">
-          Kết quả thẩm định mang tính chất tham khảo, hỗ trợ trong quá trình rà soát giáo án.
-        </p>
-
+        <button id="welcomeApiBtn" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs flex items-center justify-center space-x-1.5 transition active:scale-95 shadow-sm shadow-emerald-600/30">
+          <i data-lucide="settings" id="welcomeApiIcon" class="w-4 h-4"></i>
+          <span id="welcomeApiText">Cấu hình API</span>
+        </button>
       </div>
-
     </div>
-
-    <!-- Footer -->
-    <div class="px-6 py-4 bg-slate-50 border-t border-slate-200
-                flex flex-col sm:flex-row items-stretch sm:items-center
-                justify-end gap-2.5">
-
-      <!-- Xem video -->
-      <button id="welcomeVideoBtn"
-              class="px-4 py-2.5 rounded-xl
-                     border border-mint-300
-                     bg-mint-50 hover:bg-mint-100
-                     text-emerald-800
-                     font-extrabold text-xs
-                     flex items-center justify-center space-x-1.5
-                     transition active:scale-95">
-
-        <i data-lucide="play-circle" class="w-4 h-4"></i>
-
-        <span>Xem video hướng dẫn</span>
-
-      </button>
-
-      <!-- Cấu hình API / Đóng -->
-      <button id="welcomeApiBtn"
-              class="px-5 py-2.5 rounded-xl
-                     bg-emerald-600 hover:bg-emerald-700
-                     text-white
-                     font-extrabold text-xs
-                     flex items-center justify-center space-x-1.5
-                     transition active:scale-95
-                     shadow-sm shadow-emerald-600/30">
-
-        <i data-lucide="settings" id="welcomeApiIcon" class="w-4 h-4"></i>
-
-        <span id="welcomeApiText">Cấu hình API</span>
-
-      </button>
-
-    </div>
-
   </div>
-</div>
-<!-- ================= END POPUP CHÀO MỪNG ================= -->
+
   <!-- Popup Cấu Hình Gemini API Key & Model -->
   <div id="configModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-all duration-300">
     <div class="bg-white rounded-3xl border border-mint-300 shadow-2xl max-w-lg w-full overflow-hidden flex flex-col max-h-[90vh] animate-in fade-in zoom-in-95">
@@ -1396,8 +1297,8 @@
             <i data-lucide="key" class="w-5 h-5"></i>
           </div>
           <div>
-            <h3 class="font-extrabold text-slate-900 text-base">Cấu Hình Hệ Thống</h3>
-            <p class="text-xs text-slate-500 font-medium">Khóa cá nhân được lưu trực tiếp trên trình duyệt</p>
+            <h3 class="font-extrabold text-slate-900 text-base">Cấu Hình API Gemini Multi-Model</h3>
+            <p class="text-xs text-slate-500 font-medium">Khóa cá nhân được lưu an toàn trên trình duyệt của bạn</p>
           </div>
         </div>
         <button id="closeConfigModalBtn" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-xl hover:bg-white transition">
@@ -1409,7 +1310,7 @@
         <div class="space-y-1.5">
           <label class="font-bold text-slate-700 block">API Key của bạn:</label>
           <div class="relative flex items-center">
-            <input type="password" id="geminiApiKeyInput" placeholder="Dán khóa API (AIzaSy...)" 
+            <input type="password" id="geminiApiKeyInput" placeholder="Dán khóa API từ Google AI Studio (AIzaSy...)" 
                    class="w-full text-xs sm:text-sm px-3.5 py-3 bg-mint-50/50 border border-mint-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 pr-10 font-mono text-slate-800 transition">
             <button id="toggleApiKeyVisibility" class="absolute right-3 text-slate-400 hover:text-slate-600" title="Ẩn/Hiện khóa">
               <i data-lucide="eye" id="toggleKeyIcon" class="w-4 h-4"></i>
@@ -1418,30 +1319,35 @@
         </div>
 
         <div class="space-y-1.5">
-          <label class="font-bold text-slate-700 block">Mô hình phân tích:</label>
+          <label class="font-bold text-slate-700 block">Mô hình AI phân tích ưu tiên:</label>
           <select id="geminiModelSelect" class="w-full text-xs sm:text-sm px-3.5 py-3 bg-mint-50/50 border border-mint-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 font-semibold text-slate-800">
-            <option value="gemini-2.5-flash" selected>Gemini 2.5 Flash (Tối ưu tốc độ)</option>
-            <option value="gemini-2.5-pro">Gemini 2.5 Pro (Tốn nhiều hạn mức)</option>
+            <option value="gemini-2.5-flash" selected>Gemini 2.5 Flash (Tối ưu nhất & Nhanh)</option>
+            <option value="gemini-2.0-flash">Gemini 2.0 Flash (Tốc độ cao, Ổn định)</option>
+            <option value="gemini-1.5-flash">Gemini 1.5 Flash (Ổn định tiêu chuẩn)</option>
+            <option value="gemini-2.5-flash-lite">Gemini 2.5 Flash Lite (Tiết kiệm Quota tối đa)</option>
+            <option value="gemini-2.5-pro">Gemini 2.5 Pro (Suy luận Chuyên sâu)</option>
+            <option value="gemini-1.5-pro">Gemini 1.5 Pro (Phân tích chuyên sâu cũ)</option>
           </select>
+          <p class="text-[11px] text-slate-400 italic">Nếu Model lựa chọn hết Hạn mức (Quota Limit), hệ thống tự động thử lại bằng Model dự phòng.</p>
         </div>
 
         <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-2.5">
           <span class="font-black text-slate-800 text-xs flex items-center text-emerald-800">
             <i data-lucide="info" class="w-4 h-4 mr-1.5"></i>
-            Hướng Dẫn Nhập API Key:
+            Hướng Dẫn Tạo API Key Chuẩn:
           </span>
           <ol class="list-decimal list-inside text-xs text-slate-600 space-y-1.5 font-medium leading-relaxed">
             <li>Truy cập vào trang dịch vụ <strong>Google AI Studio</strong>.</li>
-            <li>Đăng nhập bằng tài khoản Google bất kỳ của bạn.</li>
-            <li>Nhấp vào nút <strong>"Get API key"</strong> rồi chọn <strong>"Create API key"</strong>.</li>
-            <li>Sao chép chuỗi ký tự API Key và dán vào ô bên trên, rồi bấm <strong>"Lưu Cấu Hình"</strong>.</li>
+            <li>Đăng nhập tài khoản Google của bạn.</li>
+            <li>Nhấp vào nút <strong>"Create API key"</strong>.</li>
+            <li>Sao chép toàn bộ chuỗi ký tự API Key và dán vào ô trên.</li>
           </ol>
 
           <div class="pt-1.5">
             <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" 
                class="inline-flex items-center space-x-1.5 px-3.5 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 rounded-xl text-xs font-bold transition">
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-              <span>Mở Google AI Studio</span>
+              <span>Lấy API Key tại Google AI Studio</span>
             </a>
           </div>
         </div>
@@ -1514,12 +1420,15 @@
       updateApiKeyStatusBadge();
       checkApiPingSignal();
 
-      // Popup chào mừng luôn hiển thị khi mở web.
-// Popup API sẽ KHÔNG tự động mở nữa.
-setTimeout(() => {
-  openWelcomeModal();
-}, 300);
+      setTimeout(() => {
+        openWelcomeModal();
+      }, 300);
     });
+
+    function cleanApiKey(key) {
+      if (!key) return '';
+      return key.trim().replace(/^["']|["']$/g, '');
+    }
 
     function initGuideToggle() {
       const toggleBtn = document.getElementById('toggleGuideBtn');
@@ -1545,8 +1454,8 @@ setTimeout(() => {
     }
 
     function loadSavedSettings() {
-      const savedKey = localStorage.getItem('gemini_api_key') || DEFAULT_ENV_API_KEY;
-      const savedModel = localStorage.getItem('gemini_model') || 'gemini-2.5-flash';
+      let savedKey = cleanApiKey(localStorage.getItem('gemini_api_key') || DEFAULT_ENV_API_KEY);
+      let savedModel = localStorage.getItem('gemini_model') || 'gemini-2.5-flash';
       
       const keyInput = document.getElementById('geminiApiKeyInput');
       const modelSelect = document.getElementById('geminiModelSelect');
@@ -1556,7 +1465,7 @@ setTimeout(() => {
     }
 
     function updateApiKeyStatusBadge() {
-      const savedKey = localStorage.getItem('gemini_api_key') || document.getElementById('geminiApiKeyInput').value.trim();
+      const savedKey = cleanApiKey(localStorage.getItem('gemini_api_key') || document.getElementById('geminiApiKeyInput').value);
       const badge = document.getElementById('apiKeyStatusBadge');
       const dot = document.getElementById('apiKeyStatusDot');
       const text = document.getElementById('apiKeyStatusText');
@@ -1580,28 +1489,27 @@ setTimeout(() => {
       const startTime = performance.now();
 
       try {
-        const apiKey = localStorage.getItem('gemini_api_key') || DEFAULT_ENV_API_KEY;
+        const apiKey = cleanApiKey(localStorage.getItem('gemini_api_key') || DEFAULT_ENV_API_KEY);
         if (!apiKey) {
           pingStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-amber-500 inline-block"></span><span>Chưa có API Key</span>';
           latencyMs.textContent = '-- ms';
           return;
         }
 
-        const model = localStorage.getItem('gemini_model') || 'gemini-2.5-flash';
-        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}?key=${apiKey}`);
+        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
         const duration = Math.round(performance.now() - startTime);
 
         if (res.ok) {
-          pingStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-500 signal-pulse inline-block"></span><span>Tín hiệu rất tốt</span>';
+          pingStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-500 signal-pulse inline-block"></span><span>Kết nối rất tốt</span>';
           latencyMs.textContent = `${duration} ms`;
           latencyMs.className = 'text-xs font-mono font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-xl border border-emerald-200';
         } else {
-          pingStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-red-500 inline-block"></span><span>Lỗi API Key</span>';
+          pingStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-red-500 inline-block"></span><span>API Key lỗi/Hết hạn</span>';
           latencyMs.textContent = `${res.status} ERR`;
           latencyMs.className = 'text-xs font-mono font-bold text-red-700 bg-red-50 px-2.5 py-1 rounded-xl border border-red-200';
         }
       } catch (err) {
-        pingStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-slate-400 inline-block"></span><span>Ngoại tuyến</span>';
+        pingStatus.innerHTML = '<span class="w-2 h-2 rounded-full bg-slate-400 inline-block"></span><span>Mất kết nối</span>';
         latencyMs.textContent = 'Offline';
       }
     }
@@ -1633,80 +1541,46 @@ setTimeout(() => {
       document.getElementById('widgetTokenUsageText').textContent = `${sessionTotalTokens.toLocaleString()} Tokens`;
       document.getElementById('widgetLastCallTokens').textContent = `Lần gần nhất: ${lastCallTokens.toLocaleString()}`;
     }
-function hasConfiguredApi() {
-  const savedKey = localStorage.getItem('gemini_api_key') || '';
-  const defaultKey = DEFAULT_ENV_API_KEY || '';
 
-  return Boolean(
-    savedKey.trim() || defaultKey.trim()
-  );
-}
+    function hasConfiguredApi() {
+      const savedKey = cleanApiKey(localStorage.getItem('gemini_api_key') || '');
+      const defaultKey = cleanApiKey(DEFAULT_ENV_API_KEY || '');
+      return Boolean(savedKey || defaultKey);
+    }
 
+    function openWelcomeModal() {
+      const welcomeModal = document.getElementById('welcomeModal');
+      if (!welcomeModal) return;
+      welcomeModal.classList.remove('hidden');
+      updateWelcomeApiButton();
+      lucide.createIcons();
+    }
 
-function openWelcomeModal() {
-  const welcomeModal = document.getElementById('welcomeModal');
+    function closeWelcomeModal() {
+      const welcomeModal = document.getElementById('welcomeModal');
+      if (!welcomeModal) return;
+      welcomeModal.classList.add('hidden');
+    }
 
-  if (!welcomeModal) return;
+    function updateWelcomeApiButton() {
+      const apiBtn = document.getElementById('welcomeApiBtn');
+      const apiText = document.getElementById('welcomeApiText');
+      const apiIcon = document.getElementById('welcomeApiIcon');
 
-  welcomeModal.classList.remove('hidden');
+      if (!apiBtn || !apiText || !apiIcon) return;
 
-  updateWelcomeApiButton();
+      if (hasConfiguredApi()) {
+        apiText.textContent = 'Đóng';
+        apiIcon.setAttribute('data-lucide', 'x');
+        apiBtn.className = 'px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs flex items-center justify-center space-x-1.5 transition active:scale-95 shadow-sm shadow-emerald-600/30';
+      } else {
+        apiText.textContent = 'Cấu hình API';
+        apiIcon.setAttribute('data-lucide', 'settings');
+        apiBtn.className = 'px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs flex items-center justify-center space-x-1.5 transition active:scale-95 shadow-sm shadow-emerald-600/30';
+      }
+      lucide.createIcons();
+    }
 
-  lucide.createIcons();
-}
-
-
-function closeWelcomeModal() {
-  const welcomeModal = document.getElementById('welcomeModal');
-
-  if (!welcomeModal) return;
-
-  welcomeModal.classList.add('hidden');
-}
-
-
-function updateWelcomeApiButton() {
-  const apiBtn = document.getElementById('welcomeApiBtn');
-  const apiText = document.getElementById('welcomeApiText');
-  const apiIcon = document.getElementById('welcomeApiIcon');
-
-  if (!apiBtn || !apiText || !apiIcon) return;
-
-  if (hasConfiguredApi()) {
-
-    // Đã cấu hình API
-    apiText.textContent = 'Đóng';
-
-    apiIcon.setAttribute('data-lucide', 'x');
-
-    apiBtn.className =
-      'px-5 py-2.5 rounded-xl ' +
-      'bg-emerald-600 hover:bg-emerald-700 ' +
-      'text-white ' +
-      'font-extrabold text-xs ' +
-      'flex items-center justify-center space-x-1.5 ' +
-      'transition active:scale-95 ' +
-      'shadow-sm shadow-emerald-600/30';
-
-  } else {
-
-    // Chưa cấu hình API
-    apiText.textContent = 'Cấu hình API';
-
-    apiIcon.setAttribute('data-lucide', 'settings');
-
-    apiBtn.className =
-      'px-5 py-2.5 rounded-xl ' +
-      'bg-emerald-600 hover:bg-emerald-700 ' +
-      'text-white ' +
-      'font-extrabold text-xs ' +
-      'flex items-center justify-center space-x-1.5 ' +
-      'transition active:scale-95 ' +
-      'shadow-sm shadow-emerald-600/30';
-  }
-
-  lucide.createIcons();
-}
     function initEventListeners() {
       const modal = document.getElementById('configModal');
       const openBtn = document.getElementById('openConfigModalBtn');
@@ -1720,67 +1594,36 @@ function updateWelcomeApiButton() {
       modal.addEventListener('click', (e) => {
         if (e.target === modal) modal.classList.add('hidden');
       });
-const welcomeModal = document.getElementById('welcomeModal');
-const welcomeApiBtn = document.getElementById('welcomeApiBtn');
-const welcomeVideoBtn = document.getElementById('welcomeVideoBtn');
 
+      const welcomeModal = document.getElementById('welcomeModal');
+      const welcomeApiBtn = document.getElementById('welcomeApiBtn');
+      const welcomeVideoBtn = document.getElementById('welcomeVideoBtn');
 
-// Nút Cấu hình API / Đóng
-welcomeApiBtn.addEventListener('click', () => {
+      welcomeApiBtn.addEventListener('click', () => {
+        if (hasConfiguredApi()) {
+          closeWelcomeModal();
+        } else {
+          closeWelcomeModal();
+          setTimeout(() => {
+            modal.classList.remove('hidden');
+            const keyInput = document.getElementById('geminiApiKeyInput');
+            if (keyInput) keyInput.focus();
+          }, 150);
+        }
+      });
 
-  if (hasConfiguredApi()) {
+      welcomeVideoBtn.addEventListener('click', () => {
+        if (!GUIDE_VIDEO_URL) {
+          showToast('Bạn chưa thiết lập link video hướng dẫn.', 'warning');
+          return;
+        }
+        window.open(GUIDE_VIDEO_URL, '_blank', 'noopener,noreferrer');
+      });
 
-    // Đã cấu hình → nút trở thành Đóng
-    closeWelcomeModal();
+      welcomeModal.addEventListener('click', (e) => {
+        if (e.target === welcomeModal) closeWelcomeModal();
+      });
 
-  } else {
-
-    // Chưa cấu hình → mở popup API
-    closeWelcomeModal();
-
-    setTimeout(() => {
-      modal.classList.remove('hidden');
-
-      const keyInput =
-        document.getElementById('geminiApiKeyInput');
-
-      if (keyInput) {
-        keyInput.focus();
-      }
-    }, 150);
-  }
-});
-
-
-// Nút Xem video hướng dẫn
-welcomeVideoBtn.addEventListener('click', () => {
-
-  if (!GUIDE_VIDEO_URL || GUIDE_VIDEO_URL.includes('VIDEO_ID_CUA_BAN')) {
-
-    showToast(
-      'Bạn chưa thiết lập link video hướng dẫn.',
-      'warning'
-    );
-
-    return;
-  }
-
-  window.open(
-    GUIDE_VIDEO_URL,
-    '_blank',
-    'noopener,noreferrer'
-  );
-});
-
-
-// Click ra ngoài popup → đóng
-welcomeModal.addEventListener('click', (e) => {
-
-  if (e.target === welcomeModal) {
-    closeWelcomeModal();
-  }
-
-});
       const toggleKeyBtn = document.getElementById('toggleApiKeyVisibility');
       const keyInput = document.getElementById('geminiApiKeyInput');
       toggleKeyBtn.addEventListener('click', () => {
@@ -1794,27 +1637,20 @@ welcomeModal.addEventListener('click', (e) => {
         lucide.createIcons();
       });
 
-    document.getElementById('saveKeyBtn').addEventListener('click', () => {
+      document.getElementById('saveKeyBtn').addEventListener('click', () => {
+        const key = cleanApiKey(keyInput.value);
+        const model = document.getElementById('geminiModelSelect').value;
 
-  const key = keyInput.value.trim();
-  const model = document.getElementById('geminiModelSelect').value;
+        localStorage.setItem('gemini_api_key', key);
+        localStorage.setItem('gemini_model', model);
 
-  localStorage.setItem('gemini_api_key', key);
-  localStorage.setItem('gemini_model', model);
+        updateApiKeyStatusBadge();
+        checkApiPingSignal();
+        updateWelcomeApiButton();
 
-  updateApiKeyStatusBadge();
-  checkApiPingSignal();
-
-  // Cập nhật nút trong popup chào mừng
-  updateWelcomeApiButton();
-
-  modal.classList.add('hidden');
-
-  showToast(
-    'Đã lưu cấu hình API Key & Model thành công!',
-    'success'
-  );
-});
+        modal.classList.add('hidden');
+        showToast('Đã lưu cấu hình API Key & Model thành công!', 'success');
+      });
 
       // Drag and drop main file
       const mainDropZone = document.getElementById('mainDropZone');
@@ -2080,15 +1916,14 @@ welcomeModal.addEventListener('click', (e) => {
         return;
       }
 
-      const apiKey = document.getElementById('geminiApiKeyInput').value.trim() || localStorage.getItem('gemini_api_key') || DEFAULT_ENV_API_KEY;
+      const apiKey = cleanApiKey(document.getElementById('geminiApiKeyInput').value || localStorage.getItem('gemini_api_key') || DEFAULT_ENV_API_KEY);
       if (!apiKey) {
         showToast('Chưa có Gemini API Key! Vui lòng bấm vào "Cấu Hình API" để nhập.', 'warning');
         document.getElementById('configModal').classList.remove('hidden');
         return;
       }
 
-      const model = document.getElementById('geminiModelSelect').value;
-      const targetAge = document.getElementById('targetAgeGroup').value;
+      let selectedModel = document.getElementById('geminiModelSelect').value || 'gemini-2.5-flash';
 
       const loadingCard = document.getElementById('loadingStatusCard');
       const resultContainer = document.getElementById('resultContainer');
@@ -2105,7 +1940,7 @@ welcomeModal.addEventListener('click', (e) => {
           'Đang trích xuất cấu trúc văn bản gốc & nạp ngân hàng đối chiếu...',
           'Kích hoạt bộ nhớ đệm, loại bỏ văn bản hành chính để tối ưu chi phí Token.'
         );
-        await new Promise(r => setTimeout(r, 300));
+        await new Promise(r => setTimeout(r, 200));
 
         const totalRefBudget = 16000;
         const refCount = Math.max(1, refFilesState.length);
@@ -2117,63 +1952,47 @@ welcomeModal.addEventListener('click', (e) => {
         }).join('\n\n');
 
         const optimizedMainText = optimizeTextForTokens(mainFileState.text).slice(0, 24000);
+        const targetAge = document.getElementById('targetAgeGroup').value;
 
         setExecutionPhase(
           'BƯỚC 2/3: PHÂN TÍCH CHUYÊN SÂU & ĐỐI CHIẾU',
-          `AI Gemini Engine đang thẩm định giáo án...`,
+          `AI Gemini đang thẩm định giáo án...`,
           'Kiểm tra tính chính xác của từ ngữ, đối chiếu kịch bản sáng tạo, quét mốc thời gian cũ và xây dựng bảng nhận xét.'
         );
 
         const systemInstruction = `Bạn là Chuyên gia Đánh giá Sư phạm Mầm non cấp Quốc gia và Chuyên gia Ngôn ngữ tiếng Việt, cố vấn chuyên môn cho Ban Giám Hiệu và Tổ Trưởng Chuyên Môn trường mầm non.
-Nhiệm vụ của bạn là thẩm định giáo án mầm non toàn diện, chấm điểm thang 100, bóc tách chi tiết cấu trúc hoạt động giáo án, rà soát lỗi chính tả, mốc thời gian cũ, trùng lặp kịch bản, và thực hiện 8 modules chuyên sâu:
+Nhiệm vụ của bạn là thẩm định giáo án mầm non toàn diện, chấm điểm thang 100, bóc tách chi tiết cấu trúc hoạt động giáo án, rà soát lỗi chính tả, mốc thời gian cũ, trùng lặp kịch bản, và thực hiện các modules chuyên sâu:
 
 1. MA TRẬN 5 LĨNH VỰC PHÁT TRIỂN TRẺ (Điểm 0-100 cho mỗi lĩnh vực):
-   - Thể chất (physical), Nhận thức (cognitive), Ngôn ngữ (language), Tình cảm - Kỹ năng xã hội (socialEmotional), Thẩm mỹ (aesthetic).
+   - Thể chất, Nhận thức, Ngôn ngữ, Tình cảm - Kỹ năng xã hội, Thẩm mỹ.
    - Đánh giá mức độ: "Thiếu" (<50), "Đạt" (50-69), "Tốt" (70-84), "Xuất sắc" (85-100).
-   - Chỉ rõ lĩnh vực mạnh nhất, lĩnh vực còn yếu, và đề xuất bổ sung.
 
 2. ĐỐI CHIẾU CHƯƠNG TRÌNH GDMN HIỆN HÀNH:
    - Đánh giá mức độ phù hợp (0-100%), phân tích 4 mặt: Mục tiêu, Nội dung, Phương pháp, Đánh giá.
-   - Liệt kê các tiêu chí đạt, tiêu chí chưa đạt, và khuyến nghị cải thiện.
 
 3. PHÂN TÍCH CẤU TRÚC THỜI GIAN TIẾT HỌC:
-   - Bóc tách thời lượng ước tính (phút): Ổn định tổ chức (welcome), Gây hứng thú (engagement), Hoạt động chính (mainActivity), Luyện tập (practice), Kết thúc (closing).
-   - Đánh giá phân bố: "Hợp lý", "Quá dài", hoặc "Quá ngắn", kèm đề xuất điều chỉnh.
+   - Bóc tách thời lượng ước tính (phút): Ổn định tổ chức, Gây hứng thú, Hoạt động chính, Luyện tập, Kết thúc.
 
 4. CHỈ SỐ LẤY TRẺ LÀM TRUNG TÂM (Child-Centered Index - 0 đến 100):
    - Tỷ lệ cô nói (%) vs Tỷ lệ trẻ tham gia (%).
-   - Số lượng câu hỏi mở (openQuestions), số câu hỏi đóng (closedQuestions).
-   - Mức độ hoạt động trải nghiệm, mức độ tương tác nhóm, kèm nhận xét chi tiết.
+   - Số lượng câu hỏi mở, số câu hỏi đóng.
 
 5. KIỂM TRA AN TOÀN GIÁO DỤC:
-   - Rà soát nguy cơ: chạy nhảy, leo trèo, dùng kéo, vật sắc nhọn, thí nghiệm, tiếp xúc nước, tiếp xúc nhiệt, thực phẩm gây dị ứng.
-   - Phân loại tổng thể: "An toàn", "Cần lưu ý", "Nguy cơ cao".
-   - Khuyến nghị phòng tránh.
+   - Rà soát nguy cơ: vật sắc nhọn, leo trèo, tiếp xúc nhiệt...
 
-6. PHÁT HIỆN DẤU HIỆU AI TẠO (AI Indicator - Tham khảo):
-   - Khả năng AI tạo (0-100%), văn phong lặp, cấu trúc mẫu số chung, mức độ trải nghiệm thực tế.
+6. PHÁT HIỆN DẤU HIỆU AI TẠO (AI Indicator - Tham khảo).
 
 7. ĐIỂM CỘNG SÁNG TẠO:
-   - Phát hiện các yếu tố: STEAM, Giáo dục cảm xúc (SEL), Hoạt động trải nghiệm, Dự án nhỏ, Hoạt động mở, Trò chơi sáng tạo.
-   - Điểm cộng thưởng chuyên môn (bonusPoints từ 0 đến 5đ).
+   - Phát hiện các yếu tố STEAM, SEL, Dự án nhỏ... (bonusPoints từ 0 đến 5đ).
 
 8. ĐỐI CHIẾU TRÙNG LẶP KỊCH BẢN HOẠT ĐỘNG:
-   - Đối chiếu kỹ lưỡng từng lời thoại cô giáo, lời thơ, câu đố, trò chơi, hoạt động với các file trong kho đối chiếu.
-   - Trích xuất:
-     + targetExactText: Đoạn văn bản nguyên văn chính xác trong giáo án cần chấm.
-     + matchingText: Đoạn văn bản tương ứng trong file tham khảo.
-     + referenceFileName: Tên chính xác của file tham khảo bị trùng.
-     + similarityScore: Bắt buộc điền tỷ lệ phần trăm (ví dụ: "85%", "70%", "95%"), TUYỆT ĐỐI KHÔNG để trống, không ghi "N/A".
+   - targetExactText: Đoạn văn bản nguyên văn chính xác trong giáo án cần chấm.
+   - matchingText: Đoạn văn bản tương ứng trong file tham khảo.
+   - referenceFileName: Tên chính xác của file tham khảo.
+   - similarityScore: Điền tỷ lệ phần trăm (ví dụ: "85%").
 
-9. RÀ SOÁT CHÍNH TẢ & VĂN PHONG SƯ PHẠM:
-   - Quét từng từ, từng câu trong toàn bộ văn bản giáo án: Lỗi sai bàn phím, lẫn lộn s/x, tr/ch, d/r/gi, l/n, hỏi/ngã, câu cụt...
-   - exactText phải là đoạn chữ sai nguyên văn xuất hiện trong bài.
-   - suggestion là từ đúng để thay thế.
-
-10. THẨM ĐỊNH MỐC THỜI GIAN (QUY CHUẨN: TỪ 01/01/2026 TRỞ VỀ SAU):
-   - MỌI mốc thời gian trước ngày 01/01/2026 đều coi là vi phạm và phải trích xuất:
-     + Các năm học cũ: "2024-2025", "2023-2024", "năm 2025", "ngày 20/11/2025"...
-   - exactDateText phải là cụm từ chính xác chứa mốc thời gian đó trong bài.`;
+9. RÀ SOÁT CHÍNH TẢ & VĂN PHONG SƯ PHẠM.
+10. THẨM ĐỊNH MỐC THỜI GIAN cũ.`;
 
         const userPrompt = `ĐỘ TUỔI HỌC SINH MẦM NON: ${targetAge}
 
@@ -2184,8 +2003,6 @@ KHO TẬP TIN GIÁO ÁN ĐỐI CHIẾU:
 ${refDocsFormatted || "(Không có tập tin đối chiếu nào được nạp - Vui lòng tập trung thẩm định chuyên môn nội tại)"}
 
 Hãy xuất kết quả phân tích theo đúng cấu trúc JSON đã được chỉ định, không thêm markdown ngoài JSON.`;
-
-        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
         const payload = {
           contents: [{ parts: [{ text: userPrompt }] }],
@@ -2405,21 +2222,39 @@ Hãy xuất kết quả phân tích theo đúng cấu trúc JSON đã được c
           }
         };
 
-        const response = await fetch(apiUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
+        // Fallback sequence logic
+        const fallbackList = Array.from(new Set([selectedModel, 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-2.5-flash-lite']));
+        
+        async function fetchWithModelFallback(modelIndex) {
+          const currentModel = fallbackList[modelIndex];
+          const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${currentModel}:generateContent?key=${apiKey}`;
+          
+          const res = await fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
 
-        if (!response.ok) {
-          const errData = await response.json();
-          throw new Error(errData.error?.message || `Lỗi kết nối Gemini API (Mã ${response.status})`);
+          if (!res.ok) {
+            const errData = await res.json().catch(() => ({}));
+            console.warn(`Model ${currentModel} báo lỗi ${res.status}: ${errData.error?.message || ''}`);
+            
+            if (modelIndex < fallbackList.length - 1) {
+              const nextModel = fallbackList[modelIndex + 1];
+              showToast(`Đang tự động chuyển sang Model dự phòng ${nextModel}...`, 'info');
+              return await fetchWithModelFallback(modelIndex + 1);
+            }
+            throw new Error(errData.error?.message || `Lỗi kết nối Gemini API (Mã ${res.status})`);
+          }
+          return res;
         }
+
+        const response = await fetchWithModelFallback(0);
 
         setExecutionPhase(
           'BƯỚC 3/3: KẾT XUẤT BÁO CÁO',
           'Đang đồng bộ hóa chỉ mục lỗi & kết xuất giao diện trực quan...',
-          'Lọc từ điển chính tả tiếng Việt mầm non và thiết lập điều hướng trực quan tương tác.'
+          'Lọc từ điển chính tả tiếng Việt mầm non và thiết lập điều hướng tương tác.'
         );
 
         const data = await response.json();
@@ -2464,7 +2299,7 @@ Hãy xuất kết quả phân tích theo đúng cấu trúc JSON đã được c
         loadingCard.classList.add('hidden');
         resultContainer.classList.remove('hidden');
         switchTab(1);
-        showToast('Quá trình thẩm định hoàn tất với độ chính xác cao!', 'success');
+        showToast('Quá trình thẩm định hoàn tất thành công!', 'success');
 
       } catch (err) {
         console.error('Audit Error:', err);
@@ -2540,11 +2375,11 @@ Hãy xuất kết quả phân tích theo đúng cấu trúc JSON đã được c
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
               <div class="bg-mint-50/40 p-2.5 rounded-xl border border-mint-100">
-                <strong class="text-emerald-800 block text-xs mb-1">👩‍🏫 Hoạt động của Cô giáo:</strong>
+                <strong class="text-emerald-800 block text-xs mb-1">Hoạt động của Cô giáo:</strong>
                 <p class="text-slate-700 font-medium leading-relaxed">${escapeHtml(act.teacherAction)}</p>
               </div>
               <div class="bg-teal-50/40 p-2.5 rounded-xl border border-teal-100">
-                <strong class="text-teal-800 block text-xs mb-1">🧒 Phản ứng của Trẻ:</strong>
+                <strong class="text-teal-800 block text-xs mb-1">Phản ứng của Trẻ:</strong>
                 <p class="text-slate-700 font-medium leading-relaxed">${escapeHtml(act.childrenAction)}</p>
               </div>
             </div>
@@ -2916,7 +2751,7 @@ Hãy xuất kết quả phân tích theo đúng cấu trúc JSON đã được c
 
       const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
       saveAs(blob, `Bao_Cao_Thong_Ke_Tham_Dinh_Giao_An_${new Date().toISOString().slice(0, 10)}.csv`);
-      showToast('Đã xuất báo cáo thống kê chuyên môn BGH thành công!', 'success');
+      showToast('Đã xuất báo cáo thống kê chuyên môn thành công!', 'success');
     }
 
     function renderTab2OriginalFormattedViewer() {
