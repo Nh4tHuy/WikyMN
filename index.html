@@ -1321,7 +1321,8 @@
         <div class="space-y-1.5">
           <label class="font-bold text-slate-700 block">Mô hình AI phân tích ưu tiên:</label>
           <select id="geminiModelSelect" class="w-full text-xs sm:text-sm px-3.5 py-3 bg-mint-50/50 border border-mint-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 font-semibold text-slate-800">
-            <option value="gemini-2.5-flash" selected>Gemini 2.5 Flash (Tối ưu nhất & Nhanh)</option>
+            <option value="gemini-3.6-flash" selected>Gemini 3.6 Flash (Tối ưu nhất & Siêu nhanh)</option>
+            <option value="gemini-2.5-flash">Gemini 2.5 Flash (Tốc độ cao, Phân tích chuẩn)</option>
             <option value="gemini-2.0-flash">Gemini 2.0 Flash (Tốc độ cao, Ổn định)</option>
             <option value="gemini-1.5-flash">Gemini 1.5 Flash (Ổn định tiêu chuẩn)</option>
             <option value="gemini-2.5-flash-lite">Gemini 2.5 Flash Lite (Tiết kiệm Quota tối đa)</option>
@@ -1455,13 +1456,17 @@
 
     function loadSavedSettings() {
       let savedKey = cleanApiKey(localStorage.getItem('gemini_api_key') || DEFAULT_ENV_API_KEY);
-      let savedModel = localStorage.getItem('gemini_model') || 'gemini-2.5-flash';
+      let savedModel = localStorage.getItem('gemini_model') || 'gemini-3.6-flash';
       
       const keyInput = document.getElementById('geminiApiKeyInput');
       const modelSelect = document.getElementById('geminiModelSelect');
       
       if (savedKey) keyInput.value = savedKey;
-      if (savedModel) modelSelect.value = savedModel;
+      if (savedModel && modelSelect.querySelector(`option[value="${savedModel}"]`)) {
+        modelSelect.value = savedModel;
+      } else {
+        modelSelect.value = 'gemini-3.6-flash';
+      }
     }
 
     function updateApiKeyStatusBadge() {
@@ -1923,7 +1928,7 @@
         return;
       }
 
-      let selectedModel = document.getElementById('geminiModelSelect').value || 'gemini-2.5-flash';
+      let selectedModel = document.getElementById('geminiModelSelect').value || 'gemini-3.6-flash';
 
       const loadingCard = document.getElementById('loadingStatusCard');
       const resultContainer = document.getElementById('resultContainer');
@@ -2222,8 +2227,8 @@ Hãy xuất kết quả phân tích theo đúng cấu trúc JSON đã được c
           }
         };
 
-        // Fallback sequence logic
-        const fallbackList = Array.from(new Set([selectedModel, 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-2.5-flash-lite']));
+        // Fallback sequence logic hỗ trợ Gemini 3.6 Flash & các model dự phòng
+        const fallbackList = Array.from(new Set([selectedModel, 'gemini-3.6-flash', 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-2.5-flash-lite']));
         
         async function fetchWithModelFallback(modelIndex) {
           const currentModel = fallbackList[modelIndex];
@@ -2923,8 +2928,9 @@ Hãy xuất kết quả phân tích theo đúng cấu trúc JSON đã được c
         const matchText = node.nodeValue.substring(item.index, item.index + item.length);
         const afterText = node.nodeValue.substring(item.index + item.length);
 
-        const fragment = document.createDocumentFragment();
-        if (beforeText) fragment.appendChild(document.createTextNode(beforeText));
+        const fragment = document.createElement('fragment');
+        const docFrag = document.createDocumentFragment();
+        if (beforeText) docFrag.appendChild(document.createTextNode(beforeText));
 
         const span = document.createElement('span');
         span.id = marker.id;
@@ -2933,11 +2939,11 @@ Hãy xuất kết quả phân tích theo đúng cấu trúc JSON đã được c
         span.setAttribute('data-marker-type', marker.type);
         span.title = `Click xem chi tiết (${marker.type})`;
         span.textContent = matchText;
-        fragment.appendChild(span);
+        docFrag.appendChild(span);
 
-        if (afterText) fragment.appendChild(document.createTextNode(afterText));
+        if (afterText) docFrag.appendChild(document.createTextNode(afterText));
 
-        parent.replaceChild(fragment, node);
+        parent.replaceChild(docFrag, node);
       });
     }
 
